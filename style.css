@@ -1,0 +1,150 @@
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.weather-container {
+  width: 450px;
+  margin: 100px auto;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.weather-container .current {
+  background: rgb(20, 107, 221);
+  background-color: #005c97;
+  background: -webkit-linear-gradient(to right, #363795, #005c97);
+  background: linear-gradient(to right, #363795, #005c97);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.weather-container .current .city {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.weather-container .current .day {
+  text-align: center;
+}
+
+.weather-container .current .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-container .current .row .icon img {
+  width: 120px;
+}
+
+.weather-container .current .row .temperature {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.weather-container .current .row .temperature-now {
+  font-size: 80px;
+  margin: 0;
+}
+
+.weather-container .current .row .temperature-low {
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.weather-container .current .status {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.weather-container .current .more {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.weather-container .current .item .icon span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+
+.weather-container .current .item .type {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.weather-container .list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 30px;
+}
+
+.weather-container .list .day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-container .list .day .name {
+  text-align: left;
+  width: 34px;
+}
+
+.weather-container .list .day .weather {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 110px;
+}
+
+.weather-container .list .day .weather .status {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.weather-container .list .day .temperature {
+  text-align: right;
+  display: flex;
+  gap: 5px;
+}
+
+.weather-container .list .day .temperature-high {
+  color: white;
+}
+
+.weather-container .list .day .temperature-low {
+  color: rgba(255, 255, 255, 0.5);
+}
